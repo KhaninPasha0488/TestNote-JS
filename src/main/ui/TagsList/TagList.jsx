@@ -32,7 +32,6 @@ export const TagList = ({tags, addTag, noteId, deleteTag}) => {
     return (
         <div className={cl.list}>
             {!isEdit ?
-
                 <div className={cl.tags}>
                     {tags.map(tag =>
                         <Tag tag={tag} key={tag.id + Math.random()}
@@ -46,7 +45,6 @@ export const TagList = ({tags, addTag, noteId, deleteTag}) => {
                     value={tagValue}
                     onChange={(e) =>
                         setTagValue(e.target.value)}/>}
-
             <div className={cl.button}>
                 {!isEdit ? <button className={comm.button}
                         onClick={() => {
